@@ -391,7 +391,7 @@ def detect(model, dataset_dir, subset):
             dataset.class_names, r['scores'],
             show_bbox=False, show_mask=False,
             title="Predictions")
-        #plt.savefig("{}/{}.png".format(submit_dir, dataset.image_info[image_id]["id"]))
+        plt.savefig("{}/{}.png".format(submit_dir, dataset.image_info[image_id]["id"]))
 
     # Save to csv file
     submission = "ImageId,EncodedPixels\n" + "\n".join(submission)
